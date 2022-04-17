@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datepicker</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h2>특정 날짜 선택</h2>
+    <div id="date_form_01">
+        <label for="">기억에 남는 소중한 날 : </label>
+        <input type="text" id="date_01">
+    </div>
+
+    <h2>생년월일(한글버전)</h2>
+    <div id="date_form_02">
+        <label for="">생년월일(한글버전) : </label>
+        <input type="text" id="date_02">
+    </div>
+
+    <h2>기간선택(한글버전)</h2>
+    <div class="date_form_03">
+        <label for="">기간선택(한글버전) : </label>
+        <input type="text" id="date_03_01">&nbsp;▶&nbsp;<input type="text" id="date_03_02">
+    </div>
+
+    <h2>시작일(오늘날짜)+종료일(특정날짜 선택)</h2> <!-- check! -->
+    <div id="date_form_04">
+        <label for="">기간선택 : </label>
+        <input type="text" id="date_04_01">&nbsp;▶&nbsp;<input type="text" id="date_04_02">
+    </div>
+
+    <h2>시작일(특정날짜 선택)+종료일(특정날짜 이후 선택)</h2> <!-- check! -->
+    <p>오늘 날짜 : <span id="today"></span></p>
+    <form action="">
+        <label for="fromD">시작일 : </label>
+        <input type="text" name="fromD" id="fromDate">
+        &nbsp;~&nbsp;
+        <label for="toD">종료일 : </label>
+        <input type="text" name="toD" id="toDate">
+    </form>
+
+    <div id="date_form_05">
+        <h2>선택한 날짜의 value 값을 가져오기</h2>
+        <div class="datepicker">달력 가져오기</div>
+        <input type="text" name="dp_selected" value="yy-mm-dd">
+
+    </div>
+</body>
+</html>

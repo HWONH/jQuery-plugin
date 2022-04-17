@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, main, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after{content: '';display: block;clear: both;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+.ui-datepicker-title select{vertical-align: middle !important;line-height: 24px;height: 24px;}
+
+.datepicker .ui-datepicker{width: auto;} /* check! */
+.datepicker td{width: calc(100% / 7);}
+.datepicker td a{display: inline-block;width: 100%;min-height: 100px;vertical-align: top;}
+.datepicker td a p{font-size: 13px;text-align: left;}
+.datepicker td a p:before{content: "-";}
